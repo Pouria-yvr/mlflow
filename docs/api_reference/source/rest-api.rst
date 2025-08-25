@@ -2985,3 +2985,17 @@ View type for ListExperiments query.
 +--------------+------------------------------------------+
 | ALL          | Get all experiments.                     |
 +--------------+------------------------------------------+
+
+
+.. _mlflowMlflowServicegetTraceInfo:
+
+Get Trace Info
+==============
+
++---------------------------------------+-------------+
+|               Endpoint                | HTTP Method |
++=======================================+=============+
+| ``3.0/mlflow/traces/{trace_id}``      | ``GET``     |
++---------------------------------------+-------------+
+
+Retrieves information about a trace and its associated spans by trace ID. This endpoint is part of the MLflow 3.0 REST API. It returns metadata about the trace along with the span data recorded during the trace. Replace ``{trace_id}`` with the identifier of the trace returned by tracing operations.
